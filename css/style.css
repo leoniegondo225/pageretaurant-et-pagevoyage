@@ -1,0 +1,412 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*le contenu de la page*/
+.body{
+    font-family: "roboto", Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+/*la barre de navigation*/
+.navbar{
+    position: fixed;/*permet de fixé la barre de navigation*/
+    width: 100%;
+    display: flex;/*pour qu'il occupe tout la place*/
+    justify-content: space-between;
+    background-color: #fdbc2f;/*couleur de la barre*/
+    flex-wrap: wrap;
+    align-items: center;
+    z-index: 1000;
+}
+/*logo qui est dans la barre*/
+.logo img{
+    display: flex;
+    align-items: center;
+    width: 100px;
+    padding:0px 20px 20px 20px ;
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding:0px 20px 20px 20px;
+
+}
+.navbar ul li{
+    margin-right: 20px;
+    text-align: center;
+    transition: scale(1.2);
+}
+.navbar ul li a{
+    text-align: center;
+    padding: 20px 20px  20px 20px;
+    justify-content: center;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+/*avant qu'on ne clique sur les phrase dans la barre*/
+.nav-link, .back{
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: none;
+    margin-right: 2px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+/*aprés qu'on a cliquer sur la barre de navigation*/
+.nav-link:hover, .active{
+    color: #fff;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+/*la baniere*/
+.hero{
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0, 0, 0, 0.6)), url(../image/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    position: relative;
+}
+/*texte qui est la baniere*/
+.hero-text{
+    padding: 200px 0;
+    text-align: center;
+    z-index: 100;
+    position: relative;
+}
+
+.hero p{
+    font-size: 1.5em;
+    color: #fdbc2f;
+    margin-bottom: 15px;
+}
+
+.hero h1{
+    font-size: 5em;
+    margin-bottom: 50px;
+}
+/*les boutons*/
+.btn1{
+    text-decoration: none;
+    background-color: #faae3b;
+    padding: 20px ;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 1.2em;
+    margin-right: 30px;
+}
+.btn1:hover{
+    color: black;
+    background-color: aqua;
+    transition: 0.3s;
+}
+
+.btn2{
+    text-decoration: none;
+    border: 2px solid #faae3b;/*permet de faire la bordure orange*/
+    padding: 20px ;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.btn2:hover{
+    color: black;
+    background-color: aqua;
+    transition: 0.3s;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ece9e9; /* Fond blanc pour la section */
+    height: auto; /* Maintient le ratio de l'image */
+    border-radius: 15px; /* Coins arrondis pour l'image */
+    padding: 50px 50px 50px 50px;
+}
+/*les icone*/
+.icone{
+    padding: flex;
+    align-items: center;
+}
+
+.row1{
+    display: flex;
+    align-items: center;
+    gap:80px; /*Pour espacer nos colonne*/
+    flex-wrap:wrap; /*Ramene les colonne à la ligne si l'espace est trop petit*/
+    justify-content: space-between;
+} 
+ .col-md-4{
+    display: flex;
+    align-items: center;
+    gap:30px; /*Pour espacer entre le texte et l'icone*/
+    flex-wrap:wrap; /*Ramene les colonne à la ligne si l'espace est trop petit*/
+    justify-content: space-between;
+ }
+/* pour les cerlce au tour des icones*/ 
+.icon{
+    width: 50px; 
+    height: 50px;
+    border: 2px dotted #faae3b;
+    border-radius: 50px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+ }
+
+.icon i {
+    padding: 15px;
+    color: #faae3b;
+ }
+.text{
+    flex: 1 1 calc(25% - 10px); /* donne 25% à chaque colonne*/
+    min-width: 250px; /*Force les colonne à revenir à la ligne sur petit écran */
+ }
+
+.container1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    margin: 2rem;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 80px;/*espace entre a apropos et plat favoris*/
+}
+
+.row2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:50px; /*Pour espacer nos colonne*/
+    flex-wrap:wrap; /*Ramene les colonne à la ligne si l'espace est trop petite*/
+}
+
+.col-md-6{
+    flex: 1 1 calc(25% - 10px); /* donne 25% à chaque colonne*/
+    min-width: 250px; /*Force les colonne à revenir à la ligne sur petit écran */
+    padding-bottom: var(--padding); /*Ajoute des interligne de bas sur nos colonnes pour empecher que ce ça cole sur le mobile*/
+}
+
+.col-md-6 h1{
+    margin-bottom: 15px; /*espace en bas entre le h1 et le p */
+    font-size: 40px;
+}
+
+.col-md-6 h2{
+    margin-bottom: 15px; /*espace en bas entre le h1 et le p */
+    font-size: 30px;
+    color: #faae3b;
+}
+
+.col-md-6 p{
+    text-align: justify; /*Justifie */
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.btn3{
+    text-decoration: none;
+    background-color: #faae3b;
+    padding: 20px ;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 1.2em;
+    margin-right: 30px;
+}
+
+.btn3:hover{
+    color: black;
+    background-color: aqua;
+    transition: 0.3s;
+}
+
+.col-md-6 img{
+    width: 100%;
+    border-radius: 12px;
+}
+
+.produits h2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;/* espace entre le titre et le menu*/
+    font-size: 40px;
+}
+
+.produits p{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: justify;
+    font-size: 18px;
+    margin-bottom: 50px;
+    margin-left: 300px;/*permet de mettre le paragraphe en bas du h2*/
+}
+/*permet d'aligné les produit*/
+.product-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 72px;
+}
+
+.product-item {
+    flex: 1 1 calc(25% - 40px); /* Base flexible pour un design réactif */
+    max-width: 250px;
+    background-color: #f9f9f9;
+    padding: 20px 10px 30px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.product-item img {
+    width: 100%;
+   height: 230px;/*la taille des images*/
+   object-fit: cover;
+   margin-bottom: 20px;
+}
+
+.product-item h3 {
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.product-item .price {
+    font-size: 20px;
+    color: #f58607;
+    margin: 0px 20px 20px 0px;
+    margin-left: 100px;
+}
+
+.btn4{
+    text-decoration: none;
+    background-color: #faae3b;
+    padding: 10px ;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 1.2em;
+    margin-right: 20px;
+}
+
+.btn4:hover{
+    color: black;
+    background-color: aqua;
+    transition: 0.3s;
+}
+
+.container-contente{
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    margin: 2rem;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 80px;/*espace entre a apropos et plat favoris*/
+}
+
+.row3{
+    display: flex;
+    align-items: center;
+    gap:50px; /*Pour espacer nos colonne*/
+    flex-wrap:wrap; /*Ramene les colonne à la ligne si l'espace est trop petit*/
+    justify-content: space-between;
+}
+
+.col1-md-6 {
+    flex: 1 1 calc(25% - 10px); /* donne 25% à chaque colonne*/
+    min-width: 250px; /*Force les colonne à revenir à la ligne sur petit écran */
+    padding-bottom: var(--padding); /*Ajoute des interligne de bas sur nos colonnes pour empecher que ce ça cole sur le mobile*/
+}
+
+.col1-md-6 h1 {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 80px;
+    margin-bottom: 25px; /*espace en bas entre le h1 et le p */
+    font-size: 30px;
+}
+
+.col1-md-6 p {
+    font-size: 20px;
+   text-align: justify; /*Justifie */
+}
+
+.col1-md-6 img {
+    width: 100%;
+    border-radius: 12px;
+}
+/*section footer*/
+.footer {
+    background-color: #807d7d; /* Fond sombre pour le pied de page */
+    color: #fff; /* Texte en blanc pour le contraste */
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer_content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer_section {
+    width: 30%;
+    margin: 0 10px;
+    padding: 10px;
+}
+
+.footer_section h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #f7b02c;
+}
+
+.footer_section p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.footer_section a {
+    color: #f8bf21; /* Couleur des liens */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer_section a:hover {
+    text-decoration: underline;
+}
+
+.footer_section img {
+    width: 24px;
+    height: 24px;
+    margin: 0 5px;
+}
+
+
+
+
