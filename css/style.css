@@ -14,7 +14,7 @@
     width: 100%;
     display: flex;/*pour qu'il occupe tout la place*/
     justify-content: space-between;
-    background-color: #fdbc2f;/*couleur de la barre*/
+    background-color: #7e7e80;/*couleur de la barre*/
     flex-wrap: wrap;
     align-items: center;
     z-index: 1000;
@@ -71,7 +71,7 @@
 .hero{
     width: 100%;
     height: 500px;
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0, 0, 0, 0.6)), url(../image/banner2.jpg);
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0, 0, 0, 0.6)), url(../image/banierre.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -88,7 +88,7 @@
 
 .hero p{
     font-size: 1.5em;
-    color: #fdbc2f;
+    color:#eae9f0;
     margin-bottom: 15px;
 }
 
@@ -99,7 +99,7 @@
 /*les boutons*/
 .btn1{
     text-decoration: none;
-    background-color: #faae3b;
+    background-color: #757472;
     padding: 20px ;
     border-radius: 50px;
     color: #fff;
@@ -114,7 +114,7 @@
 
 .btn2{
     text-decoration: none;
-    border: 2px solid #faae3b;/*permet de faire la bordure orange*/
+    border: 2px solid #757472;/*permet de faire la bordure orange*/
     padding: 20px ;
     border-radius: 50px;
     color: #fff;
@@ -160,7 +160,7 @@
 .icon{
     width: 50px; 
     height: 50px;
-    border: 2px dotted #faae3b;
+    border: 2px dotted #585755;
     border-radius: 50px;
     align-items: center;
     text-align: center;
@@ -170,7 +170,7 @@
 
 .icon i {
     padding: 15px;
-    color: #faae3b;
+    color: #474644;
  }
 .text{
     flex: 1 1 calc(25% - 10px); /* donne 25% à chaque colonne*/
@@ -212,7 +212,7 @@
 .col-md-6 h2{
     margin-bottom: 15px; /*espace en bas entre le h1 et le p */
     font-size: 30px;
-    color: #faae3b;
+    color: #643bfa;
 }
 
 .col-md-6 p{
@@ -223,7 +223,7 @@
 
 .btn3{
     text-decoration: none;
-    background-color: #faae3b;
+    background-color:#643bfa;
     padding: 20px ;
     border-radius: 50px;
     color: #fff;
@@ -291,14 +291,14 @@
 
 .product-item .price {
     font-size: 20px;
-    color: #f58607;
+    color: #050505;
     margin: 0px 20px 20px 0px;
     margin-left: 100px;
 }
 
 .btn4{
     text-decoration: none;
-    background-color: #faae3b;
+    background-color: #643bfa;
     padding: 10px ;
     border-radius: 50px;
     color: #fff;
@@ -357,7 +357,7 @@
     width: 100%;
     border-radius: 12px;
 }
-/*section footer*/
+/*section footer*/  
 .footer {
     background-color: #807d7d; /* Fond sombre pour le pied de page */
     color: #fff; /* Texte en blanc pour le contraste */
@@ -383,7 +383,7 @@
 .footer_section h3 {
     font-size: 16px;
     margin-bottom: 10px;
-    color: #f7b02c;
+    color: aqua;
 }
 
 .footer_section p {
@@ -392,7 +392,7 @@
 }
 
 .footer_section a {
-    color: #f8bf21; /* Couleur des liens */
+    color: aqua; /* Couleur des liens */
     text-decoration: none;
     font-weight: bold;
 }
